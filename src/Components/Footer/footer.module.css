@@ -1,0 +1,63 @@
+.footer {
+  padding: 2rem;
+
+  background: #061124;
+  color: white;
+}
+
+.largeFooter {
+  padding: 2rem 0;
+  display: grid;
+  width: 80%;
+  margin: 0 auto;
+  grid-template-columns: repeat(3, minmax(300px, 1fr));
+  gap: 2rem;
+
+  .group {
+    .head {
+      font-size: 1.5rem;
+      padding-bottom: 1rem;
+      font-weight: bold;
+    }
+
+    .body {
+      display: grid;
+      line-height: 2rem;
+
+      > a {
+        text-decoration: none;
+        color: white;
+
+        &:hover {
+          color: green;
+        }
+      }
+    }
+  }
+}
+
+.smallFooter {
+  display: flex;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 2rem 0;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+
+  .copyright {
+    text-align: center;
+  }
+
+  .address {
+    min-width: max-content;
+  }
+
+  .socials {
+    display: flex;
+    gap: 2rem;
+
+    > a {
+      color: white;
+    }
+  }
+}

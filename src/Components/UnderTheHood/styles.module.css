@@ -1,0 +1,60 @@
+.container {
+  background: #10203a;
+  color: white;
+  display: grid;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 10rem 0;
+
+  .bigText {
+    text-align: center;
+    width: 60%;
+    margin: auto;
+    font-size: 2.5rem;
+    font-weight: bold;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=13, Direction=63, Color=#FFFFFF)"; /*IE 8*/
+    text-shadow: -1px 2px 25px rgba(255, 255, 255, 0.4); /* FF3.5+, Opera 9+, Saf1+, Chrome, IE10 */
+    filter: progid:DXImageTransform.Microsoft.Shadow(Strength=13, Direction=135, Color=#FFFFFF); /*IE 5.5-7*/
+  }
+
+  .smallText {
+    width: 60%;
+    margin: auto;
+    font-size: 2rem;
+  }
+
+  .icons {
+      /* justify-content: space-between; */
+      display: flex;
+      gap: 2rem;
+      flex-wrap: wrap;
+      width: 80%;
+      margin: auto;
+      /* display: grid; */
+    grid-template-columns: repeat(5, minmax(70px, 200px));
+    place-content: center;
+
+    .icon {
+      border: 1px solid #4444;
+      padding: 2rem;
+      border-radius: 8px;
+      text-decoration: none;
+      display: grid;
+      place-items: center;
+      gap: 2rem;
+      color: white;
+      /* min-width: 100px; */
+
+      > img {
+        width: 70px;
+      }
+
+      &:hover {
+        background: #0f1c32;
+      }
+    }
+  }
+}

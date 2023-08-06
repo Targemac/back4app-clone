@@ -1,0 +1,35 @@
+.container {
+  background: #0f1c32;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  flex-direction: column;
+  text-align: center;
+  padding: 10rem 0;
+
+  .bigText {
+    width: 60%;
+    font-size: 2.5rem;
+    font-weight: bold;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=13, Direction=63, Color=#FFFFFF)"; /*IE 8*/
+    text-shadow: -1px 2px 25px rgba(255, 255, 255, 0.4); /* FF3.5+, Opera 9+, Saf1+, Chrome, IE10 */
+    filter: progid:DXImageTransform.Microsoft.Shadow(Strength=13, Direction=135, Color=#FFFFFF); /*IE 5.5-7*/
+  }
+
+  .smallText {
+    width: 60%;
+    font-size: 2rem;
+  }
+
+  .startBtn {
+    background: #27ae60;
+    color: white;
+    border: none;
+    font-weight: bold;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+}

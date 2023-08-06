@@ -1,0 +1,14 @@
+.container {
+  background: #0f1c32;
+}
+
+.carousel_container {
+  margin:0 auto;
+  /* max-width: 500px; */
+  width: 40%;
+}
+
+.image {
+  /* width: 100px !important; */
+  /* border-radius: 100%; */
+}

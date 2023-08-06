@@ -1,0 +1,84 @@
+.container {
+  background: #0f1c32;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  flex-direction: column;
+  padding: 10rem 0;
+
+  .bigText {
+    width: 60%;
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: bold;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=13, Direction=63, Color=#FFFFFF)"; /*IE 8*/
+    text-shadow: -1px 2px 25px rgba(255, 255, 255, 0.4); /* FF3.5+, Opera 9+, Saf1+, Chrome, IE10 */
+    filter: progid:DXImageTransform.Microsoft.Shadow(Strength=13, Direction=135, Color=#FFFFFF); /*IE 5.5-7*/
+  }
+
+  .smallText {
+    text-align: center;
+    width: 60%;
+    font-size: 2rem;
+  }
+
+  .itemGrp {
+    display: flex;
+    gap: 2rem;
+    column-gap: 4rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: 4rem 0;
+
+    .item {
+      border: 1px solid #4444;
+      padding: 2rem;
+      border-radius: 8px;
+      min-width: 100px;
+      max-width: 250px;
+      display: grid;
+      gap: 1rem;
+
+      .title {
+        /* font-size: 1.3rem; */
+        font-weight: bold;
+      }
+
+      .url {
+        text-decoration: none;
+        color: white;
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+        color: #27ae60;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+
+      &:hover {
+        background: #0a1323;
+      }
+    }
+  }
+
+  .btnGrp {
+    .btn {
+      border: 1px solid white;
+      border-radius: 8px;
+      padding: 8px 12px;
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+
+      &:hover {
+        color: #27ae60;
+        background: white;
+      }
+    }
+  }
+}

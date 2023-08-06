@@ -1,0 +1,64 @@
+.container {
+  background: #10203a;
+  color: white;
+  padding: 10rem 0;
+
+  .hold {
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+    flex-wrap: wrap;
+
+    .col1 {
+      width: 30%;
+      display: grid;
+      gap: 2rem;
+      min-width: min-content;
+      max-width: max-content;
+
+      .bigText {
+        font-size: 2.5rem;
+        font-weight: bold;
+        -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=13, Direction=63, Color=#FFFFFF)"; /*IE 8*/
+        text-shadow: -1px 2px 25px rgba(255, 255, 255, 0.4); /* FF3.5+, Opera 9+, Saf1+, Chrome, IE10 */
+        filter: progid:DXImageTransform.Microsoft.Shadow(Strength=13, Direction=135, Color=#FFFFFF); /*IE 5.5-7*/
+      }
+
+      .smallText {
+        font-size: 1.1rem;
+      }
+    }
+
+    .col2 {
+      width: 70%;
+      display: flex;
+      gap: 2rem;
+      flex-wrap: wrap;
+      /* border: 1px solid #4444; */
+
+      margin: auto;
+      grid-template-columns: repeat(5, minmax(70px, 200px));
+      place-content: center;
+
+      > a {
+        border: 1px solid #4444;
+        padding: 4rem 2rem;
+        border-radius: 8px;
+        /* text-decoration: none; */
+        /* display: grid; */
+        /* place-items: center; */
+        /* gap: 2rem; */
+        /* color: white; */
+        /* min-width: 100px; */
+
+        > img {
+          width: 200px;
+        }
+
+        &:hover {
+          background: #0f1c32;
+        }
+      }
+    }
+  }
+}
