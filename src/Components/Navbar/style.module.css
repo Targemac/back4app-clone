@@ -1,0 +1,151 @@
+.container {
+  display: flex;
+  background: #061124;
+  color: white;
+  gap: 4rem;
+  padding: 1rem 4rem;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  z-index: 9999;
+
+  .logo {
+    > a {
+      font-weight: bold;
+    }
+  }
+
+  .nav_group {
+    display: flex;
+    gap: 2rem;
+
+    .nav_item {
+      display: grid;
+      /* gap: 1rem; */
+      /* position: relative; */
+      transition: all 0.3s ease;
+
+      .label {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        cursor: pointer;
+
+        /* &:hover ~ .body {
+          display: flex;
+        } */
+
+        .icon {
+          transform: rotate(180deg);
+        }
+      }
+
+      .body {
+        background: black;
+        /* border: 1px solid; */
+        position: absolute;
+        left: 5%;
+        right: 5%;
+        margin-top: 2rem;
+        z-index: 5;
+        display: flex;
+        display: none;
+        gap: 2rem;
+        padding: 2rem;
+        /* width: 100%; */
+        border-radius: 5px;
+
+        .head {
+          font-weight: bold;
+          font-size: 1.5rem;
+        }
+
+        .body_groups {
+          display: grid;
+          grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+          gap: 2rem;
+
+          .group {
+            border: 1px solid white;
+
+            .group_title {
+              font-weight: bold;
+            }
+
+            .group_body {
+              padding: 1rem 0;
+            }
+
+            .group_foot {
+              padding: 1rem 0;
+              > a {
+                padding: 8px 12px;
+                color: white;
+                background: linear-gradient(0deg, #4d8540, var(--globalGreen));
+                border-radius: 5px;
+                border: 1px solid
+                  linear-gradient(0deg, #4d8540, var(--globalGreen));
+                /* font-size: 1.2rem; */
+                cursor: pointer;
+
+                &:hover {
+                  background: linear-gradient(
+                    180deg,
+                    #4d8540,
+                    var(--globalGreen)
+                  );
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .action_group {
+    /* width: 100%; */
+    display: flex;
+    gap: 2rem;
+    justify-self: flex-end;
+    align-items: center;
+    align-self: flex-end;
+    /* background: red; */
+    /* float:right; */
+
+    .login_btn {
+      padding: 8px 12px;
+      color: white;
+      border-radius: 5px;
+      background: none;
+      border: 1px solid transparent;
+
+      /* font-size: 1.2rem; */
+      cursor: pointer;
+
+      &:hover {
+        border: 1px solid var(--globalGreen);
+      }
+    }
+
+    .signup_btn {
+      padding: 8px 12px;
+      color: white;
+      background: linear-gradient(0deg, #4d8540, var(--globalGreen));
+      border-radius: 5px;
+      border: 1px solid linear-gradient(0deg, #4d8540, var(--globalGreen));
+      /* font-size: 1.2rem; */
+      cursor: pointer;
+
+      &:hover {
+        background: linear-gradient(180deg, #4d8540, var(--globalGreen));
+      }
+    }
+  }
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
